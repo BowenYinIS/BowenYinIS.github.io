@@ -1,6 +1,6 @@
 ---
 title: "Posts by Method"
-permalink: /method-archive/
+permalink: /methods/
 layout: methods
 author_profile: true
 ---
