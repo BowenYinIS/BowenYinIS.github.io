@@ -8,7 +8,7 @@ tags:
   - edge case
   - lists
   - markup
-types:
+methods:
   - design science
 ---
 
