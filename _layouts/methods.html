@@ -54,7 +54,8 @@ layout: archive
   {% endunless %}
 {% endfor %}
 
-{% assign methods = method_counts | sort: 1 | reverse %}
+<!--{% assign methods = method_counts | sort: 1 | reverse %}-->
+{% assign methods = method_counts %}
 
 <ul class="taxonomy__index">
   {% for method in methods %}
