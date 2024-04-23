@@ -5,79 +5,30 @@ layout: archive
 {{ content }}
 
 
-<!--<ul class="taxonomy__index">-->
-<!--  {% assign postsByMethod = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.methods | default: "Untyped"' %}-->
-<!--  {% for method in postsByMethod %}-->
-<!--    <li>-->
-<!--      <a href="#{{ method.name }}">-->
-<!--        <strong>{{ method.name }}</strong> <span class="taxonomy__count">{{ method.items | size }}</span>-->
-<!--      </a>-->
-<!--    </li>-->
-<!--  {% endfor %}-->
-<!--</ul>-->
-
-
-<!--{% assign entries_layout = page.entries_layout | default: 'list' %}-->
-<!--{% assign postsByMethod = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.methods | default: "Untyped"' %}-->
-<!--{% for method in postsByMethod %}-->
-<!--  <section id="{{ method.name }}" class="taxonomy__section">-->
-<!--    <h2 class="archive__subtitle">{{ method.name }}</h2>-->
-<!--    <div class="entries-{{ entries_layout }}">-->
-<!--      {% for post in method.items %}-->
-<!--        {% include archive-single.html type=entries_layout %}-->
-<!--      {% endfor %}-->
-<!--    </div>-->
-<!--    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>-->
-<!--  </section>-->
-<!--{% endfor %}-->
-
-
-{% assign method_counts = {} %}
-
-{% for post in site.posts %}
-  {% unless post.hidden %}
-    {% if post.methods %}
-      {% for method in post.methods %}
-        {% if method_counts[method] %}
-          {% assign method_counts[method] = method_counts[method] | plus: 1 %}
-        {% else %}
-          {% assign method_counts[method] = 1 %}
-        {% endif %}
-      {% endfor %}
-    {% else %}
-      {% if method_counts['Untyped'] %}
-        {% assign method_counts['Untyped'] = method_counts['Untyped'] | plus: 1 %}
-      {% else %}
-        {% assign method_counts['Untyped'] = 1 %}
-      {% endif %}
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-
-<!--{% assign methods = method_counts | sort: 1 | reverse %}-->
-{% assign methods = method_counts %}
-
 <ul class="taxonomy__index">
-  {% for method in methods %}
+  {% assign postsByMethod = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.methods | default: "Untyped"' %}
+  {% for method in postsByMethod %}
     <li>
-      <a href="#{{ method[0] | slugify }}">
-        <strong>{{ method[0] }}</strong> <span class="taxonomy__count">{{ method[1] }}</span>
+      <a href="#{{ method.name }}">
+        <strong>{{ method.name }}</strong> <span class="taxonomy__count">{{ method.items | size }}</span>
       </a>
     </li>
   {% endfor %}
 </ul>
 
-{% for method in methods %}
-  <section id="{{ method[0] | slugify }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ method[0] }}</h2>
-    <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% for post in site.posts %}
-        {% if post.methods contains method[0] or (method[0] == 'Untyped' and post.methods == nil) %}
-          {% include archive-single.html %}
-        {% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign postsByMethod = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.methods | default: "Untyped"' %}
+{% for method in postsByMethod %}
+  <section id="{{ method.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ method.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      {% for post in method.items %}
+        {% include archive-single.html type=entries_layout %}
       {% endfor %}
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}
+
 
