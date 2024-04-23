@@ -7,6 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a PhD student in the [Department of Management Information Systems](https://en.gsm.pku.edu.cn/mis/) at the [University of Oxford](https://www.ox.ac.uk/). 
+Hi! I'm a PhD student in the [Department of Management Information Systems](https://en.gsm.pku.edu.cn/mis/) at the Peking University. 
 My research interests are in the areas of in intelligent marketing, social media analytics, and LLM.
 This website is a place where I share my paper reading notes.
