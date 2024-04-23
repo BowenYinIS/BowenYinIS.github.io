@@ -6,7 +6,7 @@ layout: archive
 
 
 <ul class="taxonomy__index">
-  {% assign postsByType = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.types' %}
+  {% assign postsByType = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.types | default: "Untyped"' %}
   {% for type in postsByType %}
     <li>
       <a href="#{{ type.name }}">
@@ -18,7 +18,7 @@ layout: archive
 
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByType = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.types' %}
+{% assign postsByType = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.types | default: "Untyped"' %}
 {% for type in postsByType %}
   <section id="{{ type.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ type.name }}</h2>
