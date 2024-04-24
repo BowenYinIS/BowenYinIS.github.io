@@ -10,7 +10,7 @@
   {% assign journal_sorted = page.journal | sort_natural %}
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-gear" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].types_label | default: "Journal:" }} </strong>
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].types_label | default: "Journal:" }} </strong>
     <span itemprop="keywords">
     {% for journal in journal_sorted %}
       <a href="{{ journal | slugify | prepend: path_type | prepend: site.journal_archive.path | relative_url }}" class="page__taxonomy-item p-method" rel="tag">{{ journal }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
