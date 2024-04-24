@@ -1,0 +1,34 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+
+<ul class="taxonomy__index">
+  {% assign postsByJournal = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.journal | default: "Untyped"' %}
+  {% for journal in postsByJournal %}
+    <li>
+      <a href="#{{ journal.name }}">
+        <strong>{{ journal.name }}</strong> <span class="taxonomy__count">{{ journal.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign postsByJournal = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.journal | default: "Untyped"' %}
+{% for Journal in postsByJournal %}
+  <section id="{{ journal.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ journal.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      {% for post in journal.items %}
+        {% include archive-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
+
+

@@ -44,9 +44,8 @@ tags:
   - Unseen
   - video
   - YouTube
-methods:
-  - title
-  - url
+journal:
+  - ISR
 ---
 
 This post has many tags.

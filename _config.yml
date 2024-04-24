@@ -301,9 +301,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-method_archive:
+journal_archive:
   type: liquid
-  path: /methods/
+  path: /journal/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
