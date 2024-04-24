@@ -1,0 +1,13 @@
+# /_data/authors.yml
+
+Test:
+  name        : "Bowen Yin"
+  bio         : "A lazy Ph.D. candidate in Management Information Systems."
+  avatar      : "/assets/images/profile.png"
+  location    : "University of Arizona"
+  email       : "bowenyin@stu.pku.edu.cn"
+  links:
+    - label: "Github"
+      icon: "fas fa-fw fa-github"
+      url: "https://github.com/bowenyinis"
+
