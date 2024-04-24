@@ -19,7 +19,7 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign postsByJournal = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'item', 'item.journal | default: "Untyped"' %}
-{% for Journal in postsByJournal %}
+{% for journal in postsByJournal %}
   <section id="{{ journal.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ journal.name }}</h2>
     <div class="entries-{{ entries_layout }}">
