@@ -8,11 +8,12 @@ categories:
 tags:
   - Machine Learning
   - Design Science
+  - Editorial Comments
 journal:
   - MISQ
 ---
 
-> 文章链接：https://misq.umn.edu/misq/downloads/download/editorial/752/  
+> 文章链接：[https://misq.umn.edu/misq/downloads/download/editorial/752/  ][1]
 > 作者：Padmanabhan, B., Fang, X., Sahoo, N., & Burton-Jones, A.  
 > 时间：Mar 2022
 > 期刊：MISQ
@@ -41,9 +42,11 @@ The second type of ML research in IS seeks to apply and/or extend ML itself to m
    	
 ### Type III: ML in Complex Systems
 
-![ML Type II]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-03-01-Machine-Learning-in-IS-p2.png) 
+![ML Type II]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-03-01-Machine-Learning-in-IS-p2.png)   
 从复杂系统的角度考虑ML对商业环境的改变，如：
 
 1. 机器学习（如推荐系统）对环境（用户行为）进行改变，反过来通过数据影响机器学习本身
 
 2. 机器学习（如双边市场中针对买方的算法）同时影响其他机器学习算法（针对卖方的算法）、人类的行为以及自己本身
+
+[1]: https://misq.umn.edu/misq/downloads/download/editorial/752/
