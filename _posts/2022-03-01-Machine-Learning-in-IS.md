@@ -1,11 +1,11 @@
 ---
 title: "Machine Learning in Information Systems Research"
 excerpt: "MISQ Editor's Comments"
+categories:
+  - Review
 tags:
   - Machine Learning
   - Design Science
-categories:
-  - Review
 journal:
   - MISQ
 ---
