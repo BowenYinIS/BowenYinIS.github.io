@@ -237,6 +237,7 @@ defaults:
       comments: false
       share: true
       related: false
+      sticky: true
   # _pages
   - scope:
       path: "_pages"
@@ -244,6 +245,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sticky: true
   # _publications
   - scope:
       path: "_publications"
