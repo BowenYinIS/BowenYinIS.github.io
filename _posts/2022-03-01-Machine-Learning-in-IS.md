@@ -1,6 +1,8 @@
 ---
 title: "Machine Learning in Information Systems Research"
 excerpt: "MISQ Editor's Comments"
+toc: true
+toc_sticky: true
 categories:
   - Review
 tags:
