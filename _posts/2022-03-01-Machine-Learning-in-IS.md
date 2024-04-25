@@ -13,10 +13,12 @@ journal:
   - MISQ
 ---
 
-> 文章链接：[https://misq.umn.edu/misq/downloads/download/editorial/752/  ][1]
+> 文章链接：[https://misq.umn.edu/misq/downloads/download/editorial/752/  ][1]  
 > 作者：Padmanabhan, B., Fang, X., Sahoo, N., & Burton-Jones, A.  
-> 时间：Mar 2022
-> 期刊：MISQ
+> 时间：Mar 2022  
+> 期刊：MISQ  
+> 总结：对IS研究中ML进行了总结分类，但视角偏design science  
+> 个人观点：强调了design science需要理论支撑，值得学习
 
 ## 摘要
 

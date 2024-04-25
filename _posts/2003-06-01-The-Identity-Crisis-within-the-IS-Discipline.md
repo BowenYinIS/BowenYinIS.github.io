@@ -13,7 +13,7 @@ journal:
 >作者：Benbasat, I., & Zmud, R. W.  
 >时间：June 2003  
 >期刊：MISQ  
->一句话总结：该篇文章属于Classic IS People对IS的定义，要求Centering IT。指出IS研究常犯的两个错误：exclusive和inclusive。  
+>总结：该篇文章属于Classic IS People对IS的定义，要求Centering IT。指出IS研究常犯的两个错误：exclusive和inclusive。  
 >个人观点：太过保守主义，虽然以此研究的内容将很IS。但是对IT的过度集中，是否会减小贡献？因为IT有很强的时效性。
 
 ## 摘要
@@ -41,3 +41,4 @@ We are concerned that the IS research community is making the discipline's centr
 作者不建议将因变量换成购买，原因是IT到购买中间隔了很多中介。  
 作者不建议引入其他的营销自变量，因为这些变量不会引起IS学者的兴趣。
 
+[1]: https://www.jstor.org/stable/30036527
