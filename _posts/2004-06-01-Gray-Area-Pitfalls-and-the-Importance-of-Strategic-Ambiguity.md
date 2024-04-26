@@ -11,8 +11,8 @@ journal:
 ---
 
 >文章链接：[https://www.jstor.org/stable/25148631][1]  
->作者：Benbasat, I., & Zmud, R. W.  
->时间：June 2003  
+>作者：Andrew B. Whinston & Xianjun Geng  
+>时间：June 2004  
 >期刊：MISQ  
 >总结：该篇文章属于Econ IS People对IS的定义，是在classic people view基础上发展来的。指出要接受gray area。  
 >个人观点：扩大的IS的外延。
