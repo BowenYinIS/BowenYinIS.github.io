@@ -1,5 +1,5 @@
 ---
-title: "The Identity Crisis within the Is Discipline: Defining and Communicating the Discipline's 
+title: "The Identity Crisis within the Is Discipline: Defining and Communicating the Discipline's Core Properties"
 excerpt: "What is IS? Classic People view：Centering IT"
 Core Properties"
 categories:
