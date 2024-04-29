@@ -61,8 +61,10 @@ $p_j = logit(u_{ij})$
 
 ### 随机系数模型
 
-$u_{ij} = z_j * \theta + \sum_{k}{\sigma_kz_{jk}v{ik}} + \epsilon_{ij}${: style="text-align: center;"}  
-$p_j = logit(u_{ij})${: style="text-align: center;"}  
+$u_{ij} = z_j * \theta + \sum_{k}{\sigma_kz_{jk}v{ik}} + \epsilon_{ij}$
+{: style="text-align: center;"}  
+$p_j = logit(u_{ij})$
+{: style="text-align: center;"}  
 该模型允许系数$\theta$随着消费者不同而不同。  
 
 ### 搜索收益和搜索成本上限
