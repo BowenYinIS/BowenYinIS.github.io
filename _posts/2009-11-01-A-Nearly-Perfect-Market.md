@@ -17,7 +17,7 @@ journal:
 > 时间：Nov 2009  
 > 期刊：Quantitative Marketing and Economics  
 > 总结：这篇文章建模并估计了搜索成本。通过对消费者异质性进一步分析，分析了差异化和价格因素与消费者搜索强度的关系。  
-> 个人观点：为思考线上线下市场区别提供了一个本质参考：搜索成本
+> 个人观点：对消费者异质性下的分析很漂亮
 
 ## 摘要
 
@@ -53,8 +53,10 @@ Internet shopbots allow consumers to almost instantly compare prices and other c
 
 ### 基本模型
 
-$u_{ij} = z_j * \theta + \epsilon_{ij}${: style="text-align: center;"}  
-$p_j = logit(u_{ij})${: style="text-align: center;"}  
+$u_{ij} = z_j * \theta + \epsilon_{ij}$
+{: style="text-align: center;"}  
+$p_j = logit(u_{ij})$
+{: style="text-align: center;"}  
 其中$i$代表消费者，$j$代表报价，$z_j$代表产品特征，包括价格和其他属性。  
 
 ### 随机系数模型
