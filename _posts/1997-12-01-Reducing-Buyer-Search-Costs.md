@@ -7,6 +7,7 @@ categories:
   - Model
 tags:
   - Search Cost
+  - Electronic Market
 journal:
   - Management Science
 ---
@@ -28,4 +29,9 @@ Information systems can serve as intermediaries between the buyers and the selle
 在商品市场中，搜索成本降低到低于一定阈值可能会破坏垄断均衡，消除卖方利润。  
 在差异化市场中，搜索成本降低会降低卖方利润。如果搜索成本足够低，买方可以查看所有产品，购买最能满足他们需求的产品，从而实现社会最优分配。这种情况下，卖方利润取决于提供的产品数量。反之如果搜索成本十分高，会导致市场崩溃。  
 
+## 后续
+
+参见[这篇文章][2]，有人对其一部分结果产生了质疑。
+
 [1]: https://www.jstor.org/stable/2634535
+[2]: https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.47.12.1727.10244
